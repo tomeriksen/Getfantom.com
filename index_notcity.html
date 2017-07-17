@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+Page    : Home Page
+Version : 1.0
+Author  : Surjith S M
+URI     : http://themeforest.net/user/surjithctly
+
+Copyright © All rights Reserved
+Surjith S M / @surjithctly
+
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--========== Page Ttile ==========-->
+    <title>Fantom - First smartwatch for fans</title>
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- CSS Plugin Files -->
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+
+    <link href="vendors/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/plugins/animate.css" rel="stylesheet">
+
+    <!-- Preloader -->
+    <link href="css/plugins/preloader.css" rel="stylesheet">
+
+    <!--========== Main Styles==========-->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Theme CSS (For Available Color Options, See Documentation ) -->
+    <link href="css/themes/blue-orange.css" rel="stylesheet">
+
+    <!--========== HTML5 shim and Respond.js (Required) ==========-->
+    <!--[if lt IE 9]>
+    <script src="js/lib/html5shiv.min.js"></script>
+    <script src="js/lib/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .tt-menu {display: none !important;}
+    </style>
+</head>
+
+<body class="home" data-scroll-animation="true">
+
+
+
+
+    <!--==========Sign-up==========-->
+    <section class="row signup" id="signup">
+        <div class="container">
+            <div class="row text-center">
+                <div class="signup-img wow zoomIn text-center">
+                    <img src="images/Fanband_MANCITY_BLUE-no-badge.png" alt="" >
+                </div>
+              </div>
+              <div class="row section-header wow fadeInUp">
+                <h2>Fantom is coming</h2>
+                <p>We're hard at work making Manchester City the first club to join Fantom. But only you City fans can make it happen. Give us all a push and sign up for free today. We'll notify you when Fantom is available.</p>
+
+            </div>
+            <form action="php/subscribe.php" id="subscribeform" class="row newsletter-form mb-lg" method="post">
+                <div class="input-group">
+                    <input type="email" class="form-control alt" name="email" placeholder="Enter Email to sign up">
+                    <span class="input-group-addon">
+                <button type="submit" id="js-subscribe-btn"><img src="images/right-angle-white.png" alt=""></button>
+            </span>
+                </div>
+                <div id="js-subscribe-result" class="text-center" data-success-msg="Great! We just sent our thanks through email." data-error-msg="Oops. Something went wrong.">
+                    <p>
+                        &nbsp;
+                    </p>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+    <!--==========Sign-up others==========-->
+    <section class="row signup-2" id="signup2">
+        <div class="container">
+              <div class="row section-header wow fadeInUp">
+                <h2>Not a City fan?</h2>
+                <h3>Get your club onboard today</h3>
+
+            </div>
+
+
+            <form action="php/subscribe.php" id="subscribeform" class="row club-form mb-lg" method="post">
+
+              <div class="input-group">
+
+              <input type="email" class="form-control alt" name="email" placeholder="Enter Your Email Address">
+              <span class="input-group-addon">
+                  <button type="submit" id="js-subscribe-btn"><img src="images/right-angle-white.png" alt=""></button>
+              </span>
+            </div>
+            <div id="js-subscribe-result" class="text-center" data-success-msg="Almost finished. Please check your email and verify." data-error-msg="Oops. Something went wrong.">
+                <p>
+                    &nbsp;
+                </p>
+            </div>
+
+          </form>
+
+
+          <form action="php/subscribe.php" id="subscribeform" class="row club-form mb-lg" method="post">
+
+            <div class="input-group" id="clubahead">
+
+
+              <input class="form-control alt typeahead" type="text" placeholder="Enter club name" autocomplete="off">
+              <input type="email" class="form-control alt" name="email" autocomplete="off" placeholder="Enter Your Email Address">
+
+              <button type="submit" id="js-subscribe-btn"><img src="images/right-angle-white.png" alt=""></button>
+
+          </div>
+          <div id="js-subscribe-result" class="text-center" data-success-msg="Almost finished. Please check your email and verify." data-error-msg="Oops. Something went wrong.">
+              <p>
+                  &nbsp;
+              </p>
+          </div>
+
+        </form>
+
+        </div>
+
+
+    </section>
+-->
+
+
+
+
+
+    <!--========== Javascript Files ==========-->
+
+    <!-- jQuery Latest -->
+    <script src="js/lib/jquery-2.2.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/lib/bootstrap.min.js"></script>
+
+
+    <!-- Plugins -->
+    <script src="js/plugins/typeahead.bundle.js"></script>
+    <script type="text/javascript">
+    var substringMatcher = function(strs) {
+  return function findMatches(q, cb) {
+    var matches, substringRegex;
+
+    // an array that will be populated with substring matches
+    matches = [];
+
+    // regex used to determine if a string contains the substring `q`
+    substrRegex = new RegExp(q, 'i');
+
+    // iterate through the pool of strings and for any string that
+    // contains the substring `q`, add it to the `matches` array
+    $.each(strs, function(i, str) {
+      if (substrRegex.test(str)) {
+        matches.push(str);
+      }
+    });
+
+    cb(matches);
+  };
+};
+
+var clubs = ['Arsenal FC',
+
+'Barcelona',
+'Benfica',
+'Zenit St. Petersburg',
+'Monaco',
+'Borussia Dortmund',
+'Bayern München',
+'Schalke 04',
+'Eindhoven',
+'Bayer Leverkusen',
+'Wolfsburg',
+'Roma',
+'Inter',
+'Lazio',
+'Napoli',
+'Alkmaar',
+'Moskva',
+'Basel',
+'Anderlecht',
+'Porto',
+
+
+'Chelsea FC',
+'Everton FC',
+'Liverpool FC',
+'Manchester City',
+'Manchester United',
+'Tottenham Hotspur FC',
+'AS Monaco',
+'Olympique de Marseille',
+'Olympique Lyonnais',
+'Paris Saint Germain',
+'Borussia Mönchengladbach',
+'BV Borussia Dortmund',
+'FC Bayern München',
+'FC Schalke 04',
+'PSV Eindhoven',
+'TSV Bayer 04 Leverkusen',
+'VfL Wolfsburg',
+'AS Roma',
+'FC Internazionale',
+'Fiorentina AC',
+'Juventus FC',
+'Milan AC',
+'SS Lazio',
+'SSC Napoli',
+'Ajax Amsterdam',
+'AZ Alkmaar',
+'Besiktas JK',
+'Celtic FC Glasgow',
+'CSKA Moskva',
+'Dynamo Kiev',
+'FC Basel',
+'FC Shakhtar Donetsk',
+'FC Zenit St.Petersburg',
+'Fenerbahce SK',
+'Galatasaray SK',
+'Olympiakos Pireus FC',
+'RSC Anderlecht',
+'Sporting Braga',
+'FC Porto',
+'SL Benfica',
+'Sporting Club Portugal',
+'Athletic Club Bilbao',
+'Atletico de Madrid',
+'Celta Vigo',
+'FC Barcelona',
+'Real Madrid CF',
+'Sevilla CF',
+'Valencia CF',
+'Villarreal CF'
+];
+
+$('#clubahead .typeahead').typeahead({
+  hint: true,
+  highlight: true,
+  minLength: 1
+},
+{
+  name: 'clubs',
+  source: substringMatcher(clubs)
+});
+    </script>
+    <!--
+    <script src="vendors/owl-carousel/owl.carousel.js"></script>
+    <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/plugins/gmaps.min.js"></script>
+    <script src="js/plugins/google-map.js"></script>
+    <script src="js/plugins/wow.min.js"></script>
+    <script src="js/plugins/validate.js"></script>
+
+    <!-- Includes --
+    <script src="js/includes/pre-order.js"></script>
+    <script src="js/includes/subscribe.js"></script>
+    <script src="js/includes/contact.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <!--Mailchimp-->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bf49f25ce2783d920554a7d36/4d0db4d29e58646dd256c73a6.js");</script>
+</body>
+
+</html>

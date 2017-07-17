@@ -1,0 +1,42 @@
+<head>
+  <title></title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
+  <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="home">
+  <div class="container">
+    <div class="row">
+      <div class"col-lg-4">
+        <h3>Hungry?</h3>
+        <input class="typeahead" type="text" placeholder="Food Item" autocomplete="off">
+
+    </div>
+</div>
+  <script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      var food = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        local: ["Spinach", "Kale", "Coconut", "Avocado", "Banana", "Granola", "Beets"]
+      });
+
+      $('.typeahead').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      }, {
+        name: 'RealFood',
+        source: food
+      });
+
+    });
+  </script>
+</body>
+
+</html>

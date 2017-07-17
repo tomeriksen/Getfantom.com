@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+Page    : Home Page
+Version : 1.0
+Author  : Surjith S M
+URI     : http://themeforest.net/user/surjithctly
+
+Copyright © All rights Reserved
+Surjith S M / @surjithctly
+
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--========== Page Ttile ==========-->
+
+    <!-- CSS Plugin Files -->
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--========== Main Styles==========-->
+
+    <!--========== HTML5 shim and Respond.js (Required) ==========-->
+    <!--[if lt IE 9]>
+    <script src="js/lib/html5shiv.min.js"></script>
+    <script src="js/lib/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .tt-menu {display: none !important;}
+    </style>
+</head>
+
+<body class="home" data-scroll-animation="true" data-spy="scroll" data-target="#main-navbar">
+  <div id="the-basics">
+    <input class="typeahead" type="text" placeholder="Enter club name">
+  </div>
+
+
+    <!-- // End Product Popup Section -->
+    <!--========== Javascript Files ==========-->
+    <!-- jQuery Latest -->
+    <script src="js/lib/jquery-2.2.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/lib/bootstrap.min.js"></script>
+    <!-- Plugins -->
+    <script src="js/plugins/typeahead.bundle.js"></script>
+
+
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+    var substringMatcher = function(strs) {
+  return function findMatches(q, cb) {
+    var matches, substringRegex;
+
+    // an array that will be populated with substring matches
+    matches = [];
+
+    // regex used to determine if a string contains the substring `q`
+    substrRegex = new RegExp(q, 'i');
+
+    // iterate through the pool of strings and for any string that
+    // contains the substring `q`, add it to the `matches` array
+    $.each(strs, function(i, str) {
+      if (substrRegex.test(str)) {
+        matches.push(str);
+      }
+    });
+
+    cb(matches);
+  };
+};
+
+var states = ['Arsenal FC',
+
+'Barcelona',
+'Benfica',
+'Zenit St. Petersburg',
+'Monaco',
+'Borussia Dortmund',
+'Bayern München',
+'Schalke 04',
+'Eindhoven',
+'Bayer Leverkusen',
+'Wolfsburg',
+'Roma',
+'Inter',
+'Lazio',
+'Napoli',
+'Alkmaar',
+'Moskva',
+'Basel',
+'Anderlecht',
+'Porto',
+
+
+'Chelsea FC',
+'Everton FC',
+'Liverpool FC',
+'Manchester City',
+'Manchester United',
+'Tottenham Hotspur FC',
+'AS Monaco',
+'Olympique de Marseille',
+'Olympique Lyonnais',
+'Paris Saint Germain',
+'Borussia Mönchengladbach',
+'BV Borussia Dortmund',
+'FC Bayern München',
+'FC Schalke 04',
+'PSV Eindhoven',
+'TSV Bayer 04 Leverkusen',
+'VfL Wolfsburg',
+'AS Roma',
+'FC Internazionale',
+'Fiorentina AC',
+'Juventus FC',
+'Milan AC',
+'SS Lazio',
+'SSC Napoli',
+'Ajax Amsterdam',
+'AZ Alkmaar',
+'Besiktas JK',
+'Celtic FC Glasgow',
+'CSKA Moskva',
+'Dynamo Kiev',
+'FC Basel',
+'FC Shakhtar Donetsk',
+'FC Zenit St.Petersburg',
+'Fenerbahce SK',
+'Galatasaray SK',
+'Olympiakos Pireus FC',
+'RSC Anderlecht',
+'Sporting Braga',
+'FC Porto',
+'SL Benfica',
+'Sporting Club Portugal',
+'Athletic Club Bilbao',
+'Atletico de Madrid',
+'Celta Vigo',
+'FC Barcelona',
+'Real Madrid CF',
+'Sevilla CF',
+'Valencia CF',
+'Villarreal CF'
+];
+
+$('#the-basics .typeahead').typeahead({
+  hint: true,
+  highlight: true,
+  minLength: 1
+},
+{
+  name: 'states',
+  source: substringMatcher(states)
+});
+    </script>
+</body>
+
+</html>
