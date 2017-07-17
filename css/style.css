@@ -60,6 +60,10 @@ footer.row {
   font-family: "Poppins", sans-serif;
 }
 
+section .row img {
+  max-width: 100%;
+}
+
 a,
 .btn,
 button {
@@ -305,7 +309,7 @@ li {
   text-transform: uppercase;
   font: 500 16px/40px "Poppins", sans-serif;
   padding: 0 35px;
-  margin-right: 10px;
+  //margin-right: 10px;
   border-radius: 0;
   color: #000;
   border: none;
@@ -322,7 +326,9 @@ li {
   border-radius: 0;
   font: 500 27px/72px "Poppins", sans-serif;
   margin-bottom: 77px;
-    box-shadow: 10px 15px 15px rgba(0, 0, 0, .4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .22);
+  background: #000;//#5DD2F3;
+  color:#fff;
 }
 
 @media (max-width: 991px) {
@@ -844,7 +850,7 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .top-banner {
-
+    padding-top: 140px;
     text-align: center;
       background-image: none ;
   }
@@ -852,7 +858,7 @@ textarea.form-control {
 
 @media (max-width: 767px) {
   .top-banner {
-    padding-top: 130px;
+    padding-top: 150px;
     text-align: center;
 
   }
@@ -953,7 +959,7 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .top-banner .apple-watch img {
-    margin-top: -15%;
+    margin-top: 0;
     max-width: 80%;
     height: auto;
 
