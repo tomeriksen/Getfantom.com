@@ -43,7 +43,8 @@ a:hover, a:focus {
 }
 
 .btn-warning {
-  background: #ff6622;
+//  background: #ff6622;
+  background: #000;
 }
 
 .btn-block {
@@ -141,7 +142,7 @@ body.home header .navbar {
 }
 
 .section-header p {
-  color: #969da3;
+  color: #222;
 }
 
 .section-header.v2:after {

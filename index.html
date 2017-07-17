@@ -98,6 +98,7 @@ Surjith S M / @surjithctly
 
         <div class="top-banner row m0 text-center fadeInOnLoad">
             <div class="container">
+              <div class="row">
               <div class="col-md-6 banner-text">
                 <h3>Fuel your </h3>
                 <h2>passion</h2>
@@ -106,9 +107,10 @@ Surjith S M / @surjithctly
                 <a href="#signup" class="btn btn-warning btn-lg visible-sm-inline-block visible-xs-inline-block">Sign me up!</a>
               </div>
 
-              <div class="col-md-5 col-md-offset-1 text-center apple-watch wow fadeInUp">
+              <div class="col-md-5 col-md-offset-1  text-center apple-watch wow fadeInUp">
                 <img src="images/clenched-fist.png" alt="" class="watch_img">
               </div>
+            </div>
 
               <!--========== Notify Me ==========
               <form action="php/subscribe.php" id="subscribeform" class="row newsletter-form mb-lg" method="post">
@@ -135,13 +137,18 @@ Surjith S M / @surjithctly
     <!--==========Runner==========-->
     <section class="row runner">
         <div class="container">
-            <div class="row">
-              <div class="col-sm-6  wow fadeInDown">
+            <div class="row section-header">
+              <div class="col-sm-6 col-md-5 wow fadeInDown runner-man" >
                   <img src="images/runner.png" alt="" class="runner-img">
               </div>
-                <div class="col-sm-6 wow fadeIn">
+                <div class="col-sm-6 col-md-8 col-md-push-4 wow fadeIn" >
+                  <div class="row">
+                    <div class="col-md-11 col-md-offset-1">
                     <h2><span style="color:black;">Not</span> another smartwatch</h2>
+                  </div>
+                  <div class="col-md-10 col-md-offset-2">
                     <p>Every smartwatch comes with a stepcounter. Fans don't need that. So we created the Fantom to change what a smartwatch is forever. Now you can wear your club on your skin and never miss a beat of the action. <br>Real fans don't blink. </p>
+                  </div>
                 </div>
 
             </div>
@@ -163,12 +170,18 @@ Surjith S M / @surjithctly
         <div class="container">
             <div class="row section-header">
 
-                <div class="col-md-4 the-look-features">
+                <div class="col-md-8 the-look-features">
+                  <div class="row">
+                    <div class="col-md-12">
                         <h2>Wear your <span style="color:#5DD2F3">colors</span></h2>
+                      </div>
+                      <div class="col-md-6">
                         <p>All the advanced engineering of the Fantom is enclosed in a silky smooth silicon armband that is both durable, light and surprisingly strong. But most importantly, it carries the proud and unfaded colors of your club. <br> Wear it.</p>
+                      </div>
+                  </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4">
 
                 </div>
             </div>
@@ -179,8 +192,10 @@ Surjith S M / @surjithctly
     <section class="row the-benefits" id="features">
         <div class="container">
             <div class="row section-header wow fadeInUp">
+              <div class="col-xs-12">
                 <h2>Redefine Time</h2>
                 <p>We fans measure time differently. All that matters is time between games and during the game. The Fantom captures this seamlessly and on full automatic.</p>
+              </div>
             </div>
             <div class="row text-center">
                 <img src="images/Fanband_6_34_TOKICKOFF.png" alt="">
@@ -251,24 +266,26 @@ Surjith S M / @surjithctly
                 </div>
               </div>
               <div class="row section-header wow fadeInUp">
-                <h2>Fantom is coming</h2>
-                <p>We're hard at work making your club the first club to join Fantom. But only you City fans can make it happen. Give us all a push and sign up for free today. We'll notify you when Fantom is available.</p>
+                <div class="col-xs-12">
+                  <h2>Fantom is coming</h2>
+                  <p>We're hard at work making your club the first club to join Fantom. But only you City fans can make it happen. Give us all a push and sign up for free today. We'll notify you when Fantom is available.</p>
+                  <form action="php/subscribe.php" id="subscribeform" class="row newsletter-form mb-lg" method="post">
+                      <div class="input-group">
+                          <input type="email" class="form-control alt" name="email" placeholder="Enter Email to sign up">
+                          <span class="input-group-addon">
+                            <button type="submit" id="js-subscribe-btn"><img src="images/right-angle-white.png" alt=""></button>
+                          </span>
+                      </div>
+                      <div id="js-subscribe-result" class="text-center" data-success-msg="Great! We just sent our thanks through email." data-error-msg="Oops. Something went wrong.">
+                          <p>
+                              &nbsp;
+                          </p>
+                      </div>
 
+                  </form>
+                </div>
             </div>
-            <form action="php/subscribe.php" id="subscribeform" class="row newsletter-form mb-lg" method="post">
-                <div class="input-group">
-                    <input type="email" class="form-control alt" name="email" placeholder="Enter Email to sign up">
-                    <span class="input-group-addon">
-                <button type="submit" id="js-subscribe-btn"><img src="images/right-angle-white.png" alt=""></button>
-            </span>
-                </div>
-                <div id="js-subscribe-result" class="text-center" data-success-msg="Great! We just sent our thanks through email." data-error-msg="Oops. Something went wrong.">
-                    <p>
-                        &nbsp;
-                    </p>
-                </div>
 
-            </form>
         </div>
 
     </section>
