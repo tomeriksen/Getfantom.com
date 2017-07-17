@@ -307,7 +307,7 @@ li {
   padding: 0 35px;
   margin-right: 10px;
   border-radius: 0;
-  color: #fff;
+  color: #000;
   border: none;
 
 }
@@ -961,7 +961,7 @@ textarea.form-control {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  background-color: transparent;
+  background-color: #000;
 }
 
 .navbar-default .navbar-collapse,
@@ -971,7 +971,7 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .navbar-default .navbar-collapse {
-    background: #FFF;
+    background: #000;
     margin: 20px 0px;
     border-radius: 5px;
   }
@@ -979,7 +979,7 @@ textarea.form-control {
     background: rgba(0, 0, 0, 0.84);
   }
   .alt-bg .navbar-default.is-scrolling .navbar-collapse {
-    background: #FFF;
+    background: #000;
   }
   .alt-bg .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #A7A7A7;

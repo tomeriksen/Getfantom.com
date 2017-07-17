@@ -44,7 +44,7 @@ a:hover, a:focus {
 
 .btn-warning {
 //  background: #ff6622;
-  background: #000;
+  background: #fff;
 }
 
 .btn-block {
@@ -62,7 +62,7 @@ header.row .navbar .navbar-header .navbar-toggle {
 }
 
 header.row .navbar .navbar-header .navbar-toggle span {
-  background: #374048;
+  background: #fff;//->#374048;
 }
 
 header.row .navbar .navbar-header .navbar-toggle[aria-expanded="true"] span {
@@ -70,7 +70,7 @@ header.row .navbar .navbar-header .navbar-toggle[aria-expanded="true"] span {
 }
 
 header.row .navbar.is-scrolling {
-  background: #fff;
+  background: #000;
   -webkit-box-shadow: 0 2px 42px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 42px rgba(0, 0, 0, 0.1);
 }
@@ -96,7 +96,7 @@ header.alt-bg .navbar.is-scrolling .navbar-header .navbar-toggle span {
 }
 
 .navbar-default .nav li a {
-  color: #8f969d;
+  color: #aaa; //-> #8f969d;
 }
 
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
@@ -129,7 +129,7 @@ header.alt-bg .navbar.is-scrolling .navbar-header .navbar-toggle span {
 }
 
 body.home header .navbar {
-  background: transparent;
+  background: #000; //->transparent;
 }
 
 /*=====Section Header=====*/
