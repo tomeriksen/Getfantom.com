@@ -55,6 +55,7 @@ $(function() {
             /*
             first_name: "required",
             last_name: "required",
+
             */
             club: "required",
             email: {
@@ -66,6 +67,7 @@ $(function() {
             /*
             first_name: "Your first name please",
             last_name: "Your last name please",
+
             */
             club: "Please enter the Football Club of your choice",
             email: "Please enter your email address"
