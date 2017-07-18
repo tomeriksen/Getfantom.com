@@ -3027,13 +3027,13 @@ header.video-bg {
 @media (max-width: 479px) {
   .newsletter-form .input-group {
     display: block;
-    height: 160px;
+    height: 150px;
   }
 }
 
 .newsletter-form .form-control {
   font-size: 19px;
-  height: 80px;
+  height: 60px;
   line-height: 80px;
   padding: 0 38px;
 }
@@ -3046,15 +3046,15 @@ header.video-bg {
 }
 
 .newsletter-form .form-control::-moz-placeholder {
-  line-height: 80px;
+  line-height: 60px;
 }
 
 .newsletter-form .form-control:-ms-input-placeholder {
-  line-height: 80px;
+  line-height: 60px;
 }
 
 .newsletter-form .form-control::-webkit-input-placeholder {
-  line-height: 80px;
+  line-height: 60px;
 }
 
 .newsletter-form .input-group-addon {
@@ -3071,9 +3071,18 @@ header.video-bg {
   }
 }
 
+.newsletter-form button {
+  width: 100%;
+  line-height: 58px;
+  padding: 0;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 .newsletter-form .input-group-addon button {
   width: 130px;
-  line-height: 78px;
+  line-height: 58px;
   padding: 0;
   border: none;
   border-top-right-radius: 5px;
@@ -3097,6 +3106,18 @@ header.video-bg {
   margin-right: 8px;
 }
 
+.newsletter-form .row .col-sm-8{
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .newsletter-form .row .col-sm-8{
+      margin-bottom: 15px;
+  }
+}
+
+.twitter-typeahead { width: 100%; } 
+
 
 /*=========club-form==========*/
 
@@ -3115,7 +3136,7 @@ header.video-bg {
 
 .club-form .form-control {
   font-size: 19px;
-  height: 80px;
+  height: 30px;
   line-height: 80px;
   padding: 0 38px;
 }

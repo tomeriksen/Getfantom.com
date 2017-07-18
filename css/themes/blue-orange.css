@@ -382,6 +382,14 @@ body.home header .navbar {
   color: #c0cad0;
 }
 
+.newsletter-form  button {
+  background: #5DD2F3;
+}
+
+.newsletter-form  button:hover, .newsletter-form .input-group .input-group-addon button:focus {
+  background: #374048;
+}
+
 /*=====club form=====*/
 .club-form .input-group .input-group-addon {
   background: none;

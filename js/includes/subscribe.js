@@ -43,7 +43,7 @@ $(function() {
         }
     });
 
-    /* 
+    /*
     VALIDATE
     -------- */
 
@@ -52,10 +52,11 @@ $(function() {
     }).validate({
         rules: {
             /* uncomment if Name is needed */
-            /* 
+            /*
             first_name: "required",
-            last_name: "required", 
+            last_name: "required",
             */
+            club: "required",
             email: {
                 required: true,
                 email: true
@@ -64,15 +65,16 @@ $(function() {
         messages: {
             /*
             first_name: "Your first name please",
-            last_name: "Your last name please", 
+            last_name: "Your last name please",
             */
+            club: "Please enter the Football Club of your choice",
             email: "Please enter your email address"
         },
         submitHandler: function(form) {
 
             $("#js-subscribe-btn").attr("disabled", true);
 
-            /* 
+            /*
              CHECK PAGE FOR REDIRECT (Thank you page)
              ---------------------------------------- */
 
@@ -84,7 +86,7 @@ $(function() {
 
             $("#js-subscribe-result").fadeIn("slow").html('<p class="help-block">Please wait...</p>');
 
-            /* 
+            /*
              FETCH SUCCESS / ERROR MSG FROM HTML DATA-ATTR
              --------------------------------------------- */
 
@@ -93,7 +95,7 @@ $(function() {
 
             var dataString = $(form).serialize();
 
-            /* 
+            /*
              AJAX POST
              --------- */
 
