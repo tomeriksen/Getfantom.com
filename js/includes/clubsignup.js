@@ -1,6 +1,6 @@
 /*
 
-Script  : Subscribe Form
+Script  : clubsignup Form
 Version : 1.0
 Author  : Surjith S M
 URI     : http://themeforest.net/user/surjithctly
@@ -47,7 +47,7 @@ $(function() {
     VALIDATE
     -------- */
 
-    $("#subscribeform").submit(function(e) {
+    $("#clubsignup-form").submit(function(e) {
         e.preventDefault();
     }).validate({
         rules: {
@@ -74,26 +74,26 @@ $(function() {
         },
         submitHandler: function(form) {
 
-            $("#js-subscribe-btn").attr("disabled", true);
+            $("#js-clubsignup-btn").attr("disabled", true);
 
             /*
              CHECK PAGE FOR REDIRECT (Thank you page)
              ---------------------------------------- */
 
-            var redirect = $('#subscribeform').data('redirect');
+            var redirect = $('#signupclub-form').data('redirect');
             var noredirect = false;
             if (redirect == 'none' || redirect == "" || redirect == null) {
                 noredirect = true;
             }
 
-            $("#js-subscribe-result").fadeIn("slow").html('<p class="help-block">Please wait...</p>');
+            $("#js-clubsignup-result").fadeIn("slow").html('<p class="help-block">Please wait...</p>');
 
             /*
              FETCH SUCCESS / ERROR MSG FROM HTML DATA-ATTR
              --------------------------------------------- */
 
-            var success_msg = $('#js-subscribe-result').data('success-msg');
-            var error_msg = $('#js-subscribe-result').data('error-msg');
+            var success_msg = $('#js-clubsignup-result').data('success-msg');
+            var error_msg = $('#js-clubsignup-result').data('error-msg');
 
             var dataString = $(form).serialize();
 
@@ -104,25 +104,25 @@ $(function() {
             $.ajax({
                 type: "POST",
                 data: dataString,
-                url: "php/subscribe.php",
+                url: "php/clubsignup.php",
                 cache: false,
                 success: function(d) {
                     $(".form-group").removeClass("has-success");
                     if (d == 'success') {
                         if (noredirect) {
-                            $('#js-subscribe-result').fadeIn('slow').html('<p class="help-block text-success">' + success_msg + '</p>').delay(3000).fadeOut('slow');
+                            $('#js-clubsignup-result').fadeIn('slow').html('<p class="help-block text-success">' + success_msg + '</p>').delay(3000).fadeOut('slow');
                         } else {
                             window.location.href = redirect;
                         }
                     } else {
-                        $('#js-subscribe-result').fadeIn('slow').html('<p class="help-block text-danger">' + error_msg + '</p>').delay(3000).fadeOut('slow');
+                        $('#js-clubsignup-result').fadeIn('slow').html('<p class="help-block text-danger">' + error_msg + '</p>').delay(3000).fadeOut('slow');
                         console.log(d);
                     }
-                    $("#js-subscribe-btn").attr("disabled", false);
+                    $("#js-clubsignup-btn").attr("disabled", false);
                 },
                 error: function(d) {
-                    $('#js-subscribe-result').fadeIn('slow').html('<p class="help-block text-danger"> Sorry. Cannot access the PHP Server</p>').delay(3000).fadeOut('slow');
-                    $("#js-subscribe-btn").attr("disabled", false);
+                    $('#js-clubsignup-result').fadeIn('slow').html('<p class="help-block text-danger"> Sorry. Cannot access the PHP Server</p>').delay(3000).fadeOut('slow');
+                    $("#js-clubsignup-btn").attr("disabled", false);
                 }
             });
             return false;
