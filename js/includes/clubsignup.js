@@ -80,7 +80,7 @@ $(function() {
              CHECK PAGE FOR REDIRECT (Thank you page)
              ---------------------------------------- */
 
-            var redirect = $('#signupclub-form').data('redirect');
+            var redirect = $('#clubsignup-form').data('redirect');
             var noredirect = false;
             if (redirect == 'none' || redirect == "" || redirect == null) {
                 noredirect = true;

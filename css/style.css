@@ -3116,8 +3116,19 @@ header.video-bg {
   }
 }
 
-.twitter-typeahead { width: 100%; } 
+.twitter-typeahead { width: 100%; }
+#clubsignup-form .bootstrap-select {width:100%;}
+#clubsignup-form .bootstrap-select button {
+  border-radius: 0;
+  background: #fff;
+  color: #000;
+  font-size: 19px;
+  height: 60px;
+  line-height: 58px;
+  padding: 0 38px;
 
+
+}
 
 /*=========club-form==========*/
 

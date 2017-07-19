@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+Page    : Home Page
+Version : 1.0
+Author  : Surjith S M
+URI     : http://themeforest.net/user/surjithctly
+
+Copyright © All rights Reserved
+Surjith S M / @surjithctly
+
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--========== Page Ttile ==========-->
+    <title>Fantom - First smartwatch for fans</title>
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- CSS Plugin Files -->
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/font-awesome.min.css" rel="stylesheet">
+    <link href="css/plugins/lineicons.css" rel="stylesheet">
+    <link href="vendors/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+    <link href="vendors/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="vendors/owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+    <link href="css/plugins/animate.css" rel="stylesheet">
+
+    <!-- Preloader -->
+    <link href="css/plugins/preloader.css" rel="stylesheet">
+
+    <!--========== Main Styles==========-->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Theme CSS (For Available Color Options, See Documentation ) -->
+    <link href="css/themes/blue-orange.css" rel="stylesheet">
+
+    <!--========== HTML5 shim and Respond.js (Required) ==========-->
+    <!--[if lt IE 9]>
+    <script src="js/lib/html5shiv.min.js"></script>
+    <script src="js/lib/respond.min.js"></script>
+    <![endif]
+  -->
+
+</head>
+
+<body class="home" data-scroll-animation="true">
+
+
+
+
+
+
+    <!--==========Sign-up others==========-->
+    <section class="row signup-2" id="signup2">
+        <div class="container">
+              <div class="row section-header wow fadeInUp">
+                <h2>Not a City fan?</h2>
+                <h3>Get your club onboard today</h3>
+
+            </div>
+
+            <form action="php/clubsignup.php" id="clubsignup-form" class="row newsletter-form mb-lg" method="post">
+            <div class="row wow fadeInUp">
+              <div class="col-sm-8">
+                <select id="clubpicker" class="selectpicker" name="club">
+                  <optgroup label="England">
+                    <option>Arsenal FC</option>
+                    <option>Chelsea FC</option>
+                    <option>Everton FC</option>
+                    <option>Liverpool FC</option>
+                    <option selected>Manchester City</option>
+                    <option>Manchester United</option>
+                    <option>Tottenham Hotspur FC</option>
+                  </optgroup>
+                  <optgroup label="France">
+                    <option>AS Monaco</option>
+                    <option>Olympique de Marseille</option>
+                    <option>Olympique Lyonnais</option>
+                    <option>Paris Saint Germain</option>
+                  </optgroup>
+                  <optgroup label="Germany">
+                    <option>Borussia Mönchengladbach</option>
+                    <option>BV Borussia Dortmund</option>
+                    <option>FC Bayern München</option>
+                    <option>FC Schalke 04</option>
+                    <option>PSV Eindhoven</option>
+                    <option>TSV Bayer 04 Leverkusen</option>
+                    <option>VfL Wolfsburg</option>
+                  </optgroup>
+                  <optgroup label="Italy">
+                    <option>AS Roma</option>
+                    <option>FC Internazionale</option>
+                    <option>Fiorentina AC</option>
+                    <option>Juventus FC</option>
+                    <option>Milan AC</option>
+                    <option>SS Lazio</option>
+                    <option>SSC Napoli</option>
+                  </optgroup>
+                  <optgroup label="Portugal">
+                    <option>FC Porto</option>
+                    <option>SL Benfica</option>
+                    <option>Sporting Club Portugal</option>
+                  </optgroup>
+                  <optgroup label="Spain">
+                    <option>Athletic Club Bilbao</option>
+                    <option>Atletico de Madrid</option>
+                    <option>Celta Vigo</option>
+                    <option>FC Barcelona</option>
+                    <option>Real Madrid CF</option>
+                    <option>Sevilla CF</option>
+                    <option>Valencia CF</option>
+                    <option>Villarreal CF</option>
+                  </optgroup>
+                  <optgroup label="Other">
+                    <option>Ajax Amsterdam</option>
+                    <option>AZ Alkmaar</option>
+                    <option>Besiktas JK</option>
+                    <option>Celtic FC Glasgow</option>
+                    <option>CSKA Moskva</option>
+                    <option>Dynamo Kiev</option>
+                    <option>FC Basel</option>
+                    <option>FC Shakhtar Donetsk</option>
+                    <option>FC Zenit St.Petersburg</option>
+                    <option>Fenerbahce SK</option>
+                    <option>Galatasaray SK</option>
+                    <option>Olympiakos Pireus FC</option>
+                    <option>RSC Anderlecht</option>
+                    <option>Sporting Braga</option>
+                  </optgroup>
+                </select>
+
+
+              </div>
+              <div class="col-sm-8">
+                <input type="email" class="form-control alt" name="email" placeholder="Your email">
+              </div>
+              <div class="col-sm-4">
+                  <button type="submit" id="js-clubsignup-btn" style=" height:60px;">Sign me up!</button>
+              </div>
+            </div>
+            <div id="js-clubsignup-result" class="text-center" data-success-msg="Great! We just sent our thanks through email." data-error-msg="Oops. Something went wrong.">
+                <p>
+                    &nbsp;
+                </p>
+            </div>
+
+
+
+        </form>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <!--========== Javascript Files ==========-->
+
+    <!-- jQuery Latest -->
+    <script src="js/lib/jquery-2.2.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/lib/bootstrap.min.js"></script>
+
+
+    <!-- Plugins -->
+    <script src="js/plugins/typeahead.bundle.js"></script>
+    <script type="text/javascript">
+    $(function () {
+  $('#clubpicker').selectpicker({
+      container: 'body'
+  });
+
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+      $('#clubpicker').selectpicker('mobile');
+  }
+  });
+    </script>
+
+    <script src="vendors/owl-carousel/owl.carousel.js"></script>
+    <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/plugins/gmaps.min.js"></script>
+    <script src="js/plugins/google-map.js"></script>
+    <script src="js/plugins/wow.min.js"></script>
+    <script src="js/plugins/validate.js"></script>
+
+    <!-- Includes
+    <script src="js/includes/subscribe.js"></script>-->
+    <script src="js/includes/clubsignup.js"></script>
+    <script src="js/includes/contact.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <!--Mailchimp-->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bf49f25ce2783d920554a7d36/4d0db4d29e58646dd256c73a6.js");</script>
+</body>
+
+</html>
