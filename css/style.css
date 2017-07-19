@@ -3021,7 +3021,7 @@ header.video-bg {
 }
 
 .newsletter-form {
-  margin: 0 auto;
+  margin: 50px auto 0;
   max-width: 750px;
 }
 
@@ -3123,7 +3123,12 @@ header.video-bg {
 
 .twitter-typeahead { width: 100%; }
 
-#clubsignup-form .bootstrap-select {width:100%;}
+#clubsignup-form {
+    margin-top:  50px;
+}
+#clubsignup-form .bootstrap-select {
+  width:100%;
+}
 #clubsignup-form .bootstrap-select button {
   border-radius: 0;
   background: #fff;

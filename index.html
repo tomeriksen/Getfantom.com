@@ -273,22 +273,95 @@ Surjith S M / @surjithctly
               <div class="row section-header wow fadeInUp">
                 <div class="col-xs-12">
                   <h2>Fantom is coming</h2>
-                  <p>We're hard at work making your club the first club to join Fantom. But only you City fans can make it happen. Give us all a push and sign up for free today. We'll notify you when Fantom is available.</p>
-                  <form action="php/subscribe.php" id="subscribeform" class="row newsletter-form mb-lg" method="post">
-                      <div class="input-group">
-                          <input type="email" class="form-control alt" name="email" placeholder="Enter Email to sign up">
-                           <input type="hidden" name="club" value="Manchester City">
-                          <span class="input-group-addon">
-                            <button type="submit" id="js-subscribe-btn"><img src="images/right-angle-white.png" alt=""></button>
-                          </span>
-                      </div>
-                      <div id="js-subscribe-result" class="text-center" data-success-msg="Great! We just sent our thanks through email." data-error-msg="Oops. Something went wrong.">
-                          <p>
-                              &nbsp;
-                          </p>
-                      </div>
+                  <p>Which club will be the first to offer Fantom? It's up to you, the fans. Time to show your colors. Choose your club below and signup for free today.</p>
+                  <form action="php/clubsignup.php" id="clubsignup-form" class="row newsletter-form mb-lg" method="post">
+                  <div class="row wow fadeInUp">
+                    <div class="col-sm-8">
+                      <select id="clubpicker" class="selectpicker"  name="club">
+                        <optgroup label="England">
+                          <option>Arsenal FC</option>
+                          <option>Chelsea FC</option>
+                          <option>Everton FC</option>
+                          <option>Liverpool FC</option>
+                          <option selected>Manchester City</option>
+                          <option>Manchester United</option>
+                          <option>Tottenham Hotspur FC</option>
+                        </optgroup>
+                        <optgroup label="France">
+                          <option>AS Monaco</option>
+                          <option>Olympique de Marseille</option>
+                          <option>Olympique Lyonnais</option>
+                          <option>Paris Saint Germain</option>
+                        </optgroup>
+                        <optgroup label="Germany">
+                          <option>Borussia Mönchengladbach</option>
+                          <option>BV Borussia Dortmund</option>
+                          <option>FC Bayern München</option>
+                          <option>FC Schalke 04</option>
+                          <option>PSV Eindhoven</option>
+                          <option>TSV Bayer 04 Leverkusen</option>
+                          <option>VfL Wolfsburg</option>
+                        </optgroup>
+                        <optgroup label="Italy">
+                          <option>AS Roma</option>
+                          <option>FC Internazionale</option>
+                          <option>Fiorentina AC</option>
+                          <option>Juventus FC</option>
+                          <option>Milan AC</option>
+                          <option>SS Lazio</option>
+                          <option>SSC Napoli</option>
+                        </optgroup>
+                        <optgroup label="Portugal">
+                          <option>FC Porto</option>
+                          <option>SL Benfica</option>
+                          <option>Sporting Club Portugal</option>
+                        </optgroup>
+                        <optgroup label="Spain">
+                          <option>Athletic Club Bilbao</option>
+                          <option>Atletico de Madrid</option>
+                          <option>Celta Vigo</option>
+                          <option>FC Barcelona</option>
+                          <option>Real Madrid CF</option>
+                          <option>Sevilla CF</option>
+                          <option>Valencia CF</option>
+                          <option>Villarreal CF</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                          <option>Ajax Amsterdam</option>
+                          <option>AZ Alkmaar</option>
+                          <option>Besiktas JK</option>
+                          <option>Celtic FC Glasgow</option>
+                          <option>CSKA Moskva</option>
+                          <option>Dynamo Kiev</option>
+                          <option>FC Basel</option>
+                          <option>FC Shakhtar Donetsk</option>
+                          <option>FC Zenit St.Petersburg</option>
+                          <option>Fenerbahce SK</option>
+                          <option>Galatasaray SK</option>
+                          <option>Olympiakos Pireus FC</option>
+                          <option>RSC Anderlecht</option>
+                          <option>Sporting Braga</option>
+                        </optgroup>
+                      </select>
 
-                  </form>
+
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control alt" name="email" placeholder="Your email">
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="submit" id="js-clubsignup-btn" style=" height:60px;">Sign me up!</button>
+                    </div>
+                  </div>
+                  <div id="js-clubsignup-result" class="text-center" data-success-msg="Great! We just sent our thanks through email." data-error-msg="Oops. Something went wrong.">
+                      <p>
+                          &nbsp;
+                      </p>
+                  </div>
+
+
+
+              </form>
                 </div>
             </div>
 
@@ -401,6 +474,7 @@ Surjith S M / @surjithctly
     <script src="js/includes/pre-order.js"></script>
     <script src="js/includes/subscribe.js"></script>
     <script src="js/includes/contact.js"></script>
+    <script src="js/includes/clubsignup.js"></script>
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
