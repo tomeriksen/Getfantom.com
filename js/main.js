@@ -121,7 +121,7 @@ Surjith S M / @surjithctly
 
                 patterns: {
                     youtube: {
-                        index: 'youtube.com/', // String that detects type of video 
+                        index: 'youtube.com/', // String that detects type of video
 
                         id: 'v=', // String that splits URL in a two parts, second part should be %id%
                         // Or null - full URL will be returned
@@ -299,3 +299,13 @@ Surjith S M / @surjithctly
 
 
 })(jQuery);
+
+$(function () {
+  $('#clubpicker').selectpicker({
+      container: 'body'
+  });
+
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+      $('#clubpicker').selectpicker('mobile');
+  }
+});

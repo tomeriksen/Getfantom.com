@@ -418,7 +418,8 @@ li {
 
 .form-control.alt {
   background: #FFF;
-  border-color: #CCCCCC;
+  border-color: #000;
+  border-width: 2px;
 }
 
 textarea.form-control {
@@ -3117,6 +3118,7 @@ header.video-bg {
 }
 
 .twitter-typeahead { width: 100%; }
+
 #clubsignup-form .bootstrap-select {width:100%;}
 #clubsignup-form .bootstrap-select button {
   border-radius: 0;
@@ -3126,6 +3128,7 @@ header.video-bg {
   height: 60px;
   line-height: 58px;
   padding: 0 38px;
+  border: 2px solid #000;
 
 
 }
